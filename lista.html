@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista</title>
+    <link rel="stylesheet" href="lista.css">
+</head>
+<body>
+    
+    <h2>Buscar Usuario</h2>
+    <input type="text" id="buscar" onkeyup="filtrarUsuarios()">
+
+    <table id="tabla">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Usuario</th>
+                <th>Bloqueado</th>
+                <th>Apellido</th>
+                <th>Nombre</th>
+                <th>Bloquear</th>
+                <th>Desbloquear</th>
+            </tr>
+        </thead>
+        <tbody id="tablaUsuarios"></tbody>
+    </table>
+
+
+
+    <script src="lista.js"></script>
+</body>
+</html>

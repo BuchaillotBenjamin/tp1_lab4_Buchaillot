@@ -1,0 +1,43 @@
+body {
+    font-family: Arial;
+    text-align: center;
+}
+
+input {
+    padding: 10px;
+    width: 500px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+table {
+    width: 90%;
+    margin: auto;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #ddd;
+}
+
+.bloqueado {
+    background-color: #f4a3a3;
+}
+
+.desbloqueado {
+    background-color: #c6e1a3;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
