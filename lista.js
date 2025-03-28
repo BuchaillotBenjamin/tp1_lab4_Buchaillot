@@ -1,5 +1,4 @@
 async function cargarUsuarios(filtro = "") {
-
     let usuarios;
 
     const respuesta = await fetch(`http://181.111.166.250:8081/tp/lista.php?action=BUSCAR`, {
@@ -53,8 +52,8 @@ tablaBody.addEventListener('click', async (event) => {
         });
 
         const resultado = await respuesta.json();
-        cargarUsuarios();
-
+        const filtro = document.getElementById("buscar").value; // Obtener el filtro actual
+        cargarUsuarios(filtro); // Recargar usuarios con el filtro actual
     }
 
     if (target.closest('.desbloquear')) {
@@ -67,7 +66,7 @@ tablaBody.addEventListener('click', async (event) => {
 
         const resultado = await respuesta.json();
         console.log('Usuario desbloqueado:', resultado);
-        cargarUsuarios();
-
+        const filtro = document.getElementById("buscar").value; // Obtener el filtro actual
+        cargarUsuarios(filtro); // Recargar usuarios con el filtro actual
     }
 });

@@ -1,5 +1,4 @@
 body {
-    font-family: Arial;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -16,6 +15,9 @@ form {
     flex-direction: column;
     gap: 15px; 
     width: 500px;
+    background-color:rgb(185, 181, 181);
+    padding: 20px;
+    border-radius: 10px;
 }
 
 label {
@@ -47,6 +49,6 @@ button:hover {
 
 pre#resultado {
     margin-top: 10px;
-    font-size: 14px;
-    color: #333;
+    font-size: 15px;
+    color: red;
 }
